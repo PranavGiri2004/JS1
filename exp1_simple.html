@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area Calculator</title>
+</head>
+<body>
+    <h1>Area Calculator</h1>
+
+    <h2>Circle Area</h2>
+    <label>Enter Radius:</label>
+    <input type="number" id="radius">
+    <button onclick="circleArea()">Calculate Area</button>
+    <p id="circleResult"></p>
+
+    <h2>Triangle Area</h2>
+    <label>Enter Three Sides:</label>
+    <input type="number" id="side1" placeholder="Side 1">
+    <input type="number" id="side2" placeholder="Side 2">
+    <input type="number" id="side3" placeholder="Side 3">
+    <button onclick="triangleArea()">Calculate Area</button>
+    <p id="triangleResult"></p>
+
+    <h2>Rectangle Area</h2>
+    <label>Enter Length and Breadth:</label>
+    <input type="number" id="length" placeholder="Length">
+    <input type="number" id="breadth" placeholder="Breadth">
+    <button onclick="rectangleArea()">Calculate Area</button>
+    <p id="rectangleResult"></p>
+
+    <script src="exp1_simple.js"></script>
+</body>
+</html>
