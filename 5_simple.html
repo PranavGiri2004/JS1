@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+
+    <label for="futureDate">Choose future date and time:</label>
+    <input type="datetime-local" id="futureDate">
+
+    <p>OR</p>
+
+    <label for="duration">Enter duration (5m, 10m, 2h, 1d):</label>
+    <input type="text" id="duration" placeholder="Example: 5m, 10m, 2h, 1d">
+
+    <br><br>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+
+    <h2 id="timer">00:00:00:00:00:00</h2>
+    <p id="message"></p>
+
+    <script src="5_simple.js"></script>
+</body>
+</html>

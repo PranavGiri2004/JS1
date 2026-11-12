@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Array Operations</title>
+</head>
+<body>
+
+    <h2>Array Operations</h2>
+
+    <h3>Create Array</h3>
+    <label>Enter Array Size</label>
+    <input type="number" id="size" min="1">
+    <button onclick="initializeArray()">Initialize Array</button>
+
+    <br><br>
+
+    <label>Enter Element</label>
+    <input type="text" id="element" placeholder="Enter one element">
+    <button onclick="addElement()">Add Element</button>
+    <p id="createOutput"></p>
+
+    <h3>Current Array</h3>
+    <p id="currentArray">[]</p>
+
+    <hr>
+
+    <h3>Remove Element</h3>
+    <input type="radio" name="removeType" value="value" checked>
+    Remove By Value
+
+    <input type="radio" name="removeType" value="index">
+    Remove By Index
+
+    <input type="text" id="removeInput" placeholder="Enter Value or Index">
+    <button onclick="removeElement()">Remove</button>
+    <p id="removeOutput"></p>
+
+    <hr>
+
+    <h3>Search Element</h3>
+    <input type="radio" name="searchType" value="value" checked>
+    Search By Value
+
+    <input type="radio" name="searchType" value="index">
+    Search By Index
+
+    <input type="text" id="searchValue" placeholder="Enter Value or Index">
+    <button onclick="searchElement()">Search</button>
+    <p id="searchOutput"></p>
+
+    <hr>
+
+    <h3>Empty Array</h3>
+    <button onclick="flushArray()">Flush Array</button>
+    <p id="flushOutput"></p>
+
+    <script src="experiment6_simple.js"></script>
+</body>
+</html>

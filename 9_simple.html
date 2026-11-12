@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+</head>
+<body>
+
+    <h1>Student Information Form</h1>
+
+    <div id="formCard">
+        <form id="studentForm" onsubmit="return validateForm()">
+
+            <h2>Personal Details</h2>
+
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" placeholder="Enter your full name">
+            <div id="nameError"></div>
+            <br>
+
+            <label for="address">Address</label><br>
+            <textarea id="address" rows="3" placeholder="Enter your address"></textarea>
+            <div id="addressError"></div>
+            <br>
+
+            <label for="city">City</label><br>
+            <input type="text" id="city" placeholder="Enter your city">
+            <div id="cityError"></div>
+            <br>
+
+            <label for="state">State</label><br>
+            <select id="state">
+                <option value="">-- Select your state --</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Goa">Goa</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+            </select>
+            <div id="stateError"></div>
+            <br>
+
+            <label>Gender</label><br>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+            <div id="genderError"></div>
+            <br>
+
+            <label for="mobile">Mobile Number</label><br>
+            <input type="text" id="mobile" maxlength="10" placeholder="Enter 10 digit mobile number">
+            <div id="mobileError"></div>
+            <br>
+
+            <label for="email">Email Id</label><br>
+            <input type="text" id="email" placeholder="Enter your email id">
+            <div id="emailError"></div>
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+            <button type="button" onclick="fillUsingPrompt()">Fill using prompt()</button>
+
+        </form>
+    </div>
+
+    <div id="welcomeCard" hidden>
+        <h2>Congratulations</h2>
+        <p>Your details have been submitted successfully.</p>
+        <div id="submittedData"></div>
+        <button type="button" onclick="backToForm()">Fill the Form Again</button>
+    </div>
+
+    <script src="9_simple.js"></script>
+</body>
+</html>

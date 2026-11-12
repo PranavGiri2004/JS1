@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Array Operations</title>
+</head>
+<body>
+
+    <h2>Array Operations</h2>
+
+    <h3>Create Array</h3>
+
+    <label>Enter Array Size</label>
+    <input type="number" id="size" min="1" placeholder="Enter array size">
+    <button type="button" onclick="initializeArray()">Initialize Array</button>
+
+    <br><br>
+
+    <label>Enter Element</label>
+    <input type="text" id="element" placeholder="Example: 10, hello, [1,2,3]">
+    <button type="button" onclick="addElement()">Add Element</button>
+
+    <p id="createOutput"></p>
+
+    <h3>Current Array</h3>
+    <div id="currentArray">[]</div>
+
+    <hr>
+
+    <h3>Check Object at Index for Array</h3>
+
+    <label>Enter Array Index</label>
+    <input type="number" id="indexInput" min="0" placeholder="Enter index">
+    <button type="button" onclick="checkArray()">Check</button>
+
+    <p id="indexOutput"></p>
+
+    <script src="7_simple.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Changing Background Colour</title>
+</head>
+<body onclick="backgroundClick(event)">
+
+    <h2>Changing Background Colour</h2>
+
+    <p id="hoverText" onmouseover="hoverTextOver()" onmouseout="hoverTextOut()">
+        Move your mouse over this text.
+    </p>
+
+    <input type="text" id="focusBox"
+           placeholder="Click here for focus event"
+           onfocus="fieldFocus()"
+           onblur="fieldBlur()">
+
+    <script src="8_simple.js"></script>
+</body>
+</html>
